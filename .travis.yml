@@ -4,4 +4,4 @@ xcode_project: DragonsApp.xcodeproj
 xcode_scheme: DragonsApp
 xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone X
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t {42c69a11-14c2-4b44-8340-5914225f21ac}
+  - bash <(curl -s https://codecov.io/bash) -X xcodellvm
