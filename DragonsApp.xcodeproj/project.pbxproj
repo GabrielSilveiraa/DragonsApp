@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3C83BF22B1410E0041900B /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */; };
 		CD783F0E22B081F700F15F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD783F0D22B081F700F15F5D /* AppDelegate.swift */; };
 		CD783F1022B081F700F15F5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD783F0F22B081F700F15F5D /* ViewController.swift */; };
-		CD783F1322B081F700F15F5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD783F1122B081F700F15F5D /* Main.storyboard */; };
 		CD783F1522B081F800F15F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD783F1422B081F800F15F5D /* Assets.xcassets */; };
 		CD783F1822B081F800F15F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */; };
 		CD783F2322B081F800F15F5D /* DragonsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD783F2222B081F800F15F5D /* DragonsAppTests.swift */; };
+		CDC5CC6D22B0B16F00DEE1FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC6C22B0B16F00DEE1FD /* Coordinator.swift */; };
+		CDC5CC6F22B0B21800DEE1FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */; };
+		CDC5CC7422B0B5CD00DEE1FD /* DragonsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		CD783F0A22B081F700F15F5D /* DragonsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD783F0D22B081F700F15F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD783F0F22B081F700F15F5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD783F1222B081F700F15F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD783F1422B081F800F15F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD783F1722B081F800F15F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD783F1922B081F800F15F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD783F1E22B081F800F15F5D /* DragonsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD783F2222B081F800F15F5D /* DragonsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsAppTests.swift; sourceTree = "<group>"; };
 		CD783F2422B081F800F15F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC5CC6C22B0B16F00DEE1FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +83,11 @@
 		CD783F0C22B081F700F15F5D /* DragonsApp */ = {
 			isa = PBXGroup;
 			children = (
+				CDC5CC7022B0B52100DEE1FD /* Scenes */,
+				CDC5CC6B22B0B15C00DEE1FD /* Protocols */,
 				CD783F0D22B081F700F15F5D /* AppDelegate.swift */,
+				CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */,
 				CD783F0F22B081F700F15F5D /* ViewController.swift */,
-				CD783F1122B081F700F15F5D /* Main.storyboard */,
 				CD783F1422B081F800F15F5D /* Assets.xcassets */,
 				CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */,
 				CD783F1922B081F800F15F5D /* Info.plist */,
@@ -92,8 +100,41 @@
 			children = (
 				CD783F2222B081F800F15F5D /* DragonsAppTests.swift */,
 				CD783F2422B081F800F15F5D /* Info.plist */,
+				CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */,
 			);
 			path = DragonsAppTests;
+			sourceTree = "<group>";
+		};
+		CDC5CC6B22B0B15C00DEE1FD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CDC5CC6C22B0B16F00DEE1FD /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CDC5CC7022B0B52100DEE1FD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CDC5CC7122B0B52C00DEE1FD /* DragonsList */,
+				CDC5CC7222B0B53F00DEE1FD /* DragonDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CDC5CC7122B0B52C00DEE1FD /* DragonsList */ = {
+			isa = PBXGroup;
+			children = (
+				CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */,
+			);
+			path = DragonsList;
+			sourceTree = "<group>";
+		};
+		CDC5CC7222B0B53F00DEE1FD /* DragonDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DragonDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +220,6 @@
 			files = (
 				CD783F1822B081F800F15F5D /* LaunchScreen.storyboard in Resources */,
 				CD783F1522B081F800F15F5D /* Assets.xcassets in Resources */,
-				CD783F1322B081F700F15F5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC5CC6F22B0B21800DEE1FD /* AppCoordinator.swift in Sources */,
 				CD783F1022B081F700F15F5D /* ViewController.swift in Sources */,
+				CDC5CC7422B0B5CD00DEE1FD /* DragonsListCoordinator.swift in Sources */,
 				CD783F0E22B081F700F15F5D /* AppDelegate.swift in Sources */,
+				CDC5CC6D22B0B16F00DEE1FD /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3C83BF22B1410E0041900B /* CoordinatorTests.swift in Sources */,
 				CD783F2322B081F800F15F5D /* DragonsAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +265,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CD783F1122B081F700F15F5D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD783F1222B081F700F15F5D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
