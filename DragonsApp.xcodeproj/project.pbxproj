@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD35F17E22B2A189005B6D95 /* DragonsListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F17D22B2A189005B6D95 /* DragonsListServiceTests.swift */; };
+		CD35F18122B2A247005B6D95 /* SuccessDragonsList.json in Resources */ = {isa = PBXBuildFile; fileRef = CD35F18022B2A247005B6D95 /* SuccessDragonsList.json */; };
+		CD35F18322B2A354005B6D95 /* ErrorDragonsList.json in Resources */ = {isa = PBXBuildFile; fileRef = CD35F18222B2A354005B6D95 /* ErrorDragonsList.json */; };
+		CD35F18822B2C792005B6D95 /* DragonsList.json in Resources */ = {isa = PBXBuildFile; fileRef = CD35F18722B2C792005B6D95 /* DragonsList.json */; };
+		CD35F18C22B2C88A005B6D95 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F18B22B2C88A005B6D95 /* XCTestCase.swift */; };
+		CD35F18E22B2DED8005B6D95 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F18D22B2DED8005B6D95 /* NetworkManagerTests.swift */; };
+		CD3C83BF22B1410E0041900B /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */; };
+		CD3C83F122B17ABE0041900B /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83F022B17ABE0041900B /* Dragon.swift */; };
+		CD3C840522B183DA0041900B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83FA22B183DA0041900B /* NetworkManager.swift */; };
+		CD3C840622B183DA0041900B /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83FB22B183DA0041900B /* ParameterEncoding.swift */; };
+		CD3C840722B183DA0041900B /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83FC22B183DA0041900B /* HTTPMethod.swift */; };
+		CD3C840822B183DA0041900B /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83FD22B183DA0041900B /* EndPointType.swift */; };
+		CD3C840922B183DA0041900B /* DragonEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83FF22B183DA0041900B /* DragonEndPoint.swift */; };
+		CD3C840A22B183DA0041900B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C840122B183DA0041900B /* Environment.swift */; };
+		CD3C840B22B183DA0041900B /* Environment.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD3C840222B183DA0041900B /* Environment.plist */; };
+		CD3C840C22B183DA0041900B /* DragonsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C840422B183DA0041900B /* DragonsListService.swift */; };
+		CD783F0E22B081F700F15F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD783F0D22B081F700F15F5D /* AppDelegate.swift */; };
+		CD783F1522B081F800F15F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD783F1422B081F800F15F5D /* Assets.xcassets */; };
+		CD783F1822B081F800F15F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */; };
+		CDC5CC6D22B0B16F00DEE1FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC6C22B0B16F00DEE1FD /* Coordinator.swift */; };
+		CDC5CC6F22B0B21800DEE1FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */; };
+		CDC5CC7422B0B5CD00DEE1FD /* DragonsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD783F1F22B081F800F15F5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD783F0222B081F600F15F5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD783F0922B081F700F15F5D;
+			remoteInfo = DragonsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD35F17D22B2A189005B6D95 /* DragonsListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListServiceTests.swift; sourceTree = "<group>"; };
+		CD35F18022B2A247005B6D95 /* SuccessDragonsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SuccessDragonsList.json; sourceTree = "<group>"; };
+		CD35F18222B2A354005B6D95 /* ErrorDragonsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ErrorDragonsList.json; sourceTree = "<group>"; };
+		CD35F18722B2C792005B6D95 /* DragonsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DragonsList.json; sourceTree = "<group>"; };
+		CD35F18B22B2C88A005B6D95 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		CD35F18D22B2DED8005B6D95 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
+		CD3C83F022B17ABE0041900B /* Dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
+		CD3C83FA22B183DA0041900B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CD3C83FB22B183DA0041900B /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		CD3C83FC22B183DA0041900B /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CD3C83FD22B183DA0041900B /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		CD3C83FF22B183DA0041900B /* DragonEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonEndPoint.swift; sourceTree = "<group>"; };
+		CD3C840122B183DA0041900B /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		CD3C840222B183DA0041900B /* Environment.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Environment.plist; sourceTree = "<group>"; };
+		CD3C840422B183DA0041900B /* DragonsListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonsListService.swift; sourceTree = "<group>"; };
+		CD783F0A22B081F700F15F5D /* DragonsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD783F0D22B081F700F15F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD783F1422B081F800F15F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD783F1722B081F800F15F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD783F1922B081F800F15F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD783F1E22B081F800F15F5D /* DragonsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD783F2422B081F800F15F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDC5CC6C22B0B16F00DEE1FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD783F0722B081F700F15F5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD783F1B22B081F800F15F5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD35F17F22B2A220005B6D95 /* ServiceMocks */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F18022B2A247005B6D95 /* SuccessDragonsList.json */,
+				CD35F18222B2A354005B6D95 /* ErrorDragonsList.json */,
+			);
+			path = ServiceMocks;
+			sourceTree = "<group>";
+		};
+		CD35F18622B2C768005B6D95 /* ModelMocks */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F18722B2C792005B6D95 /* DragonsList.json */,
+			);
+			path = ModelMocks;
+			sourceTree = "<group>";
+		};
+		CD35F18922B2C857005B6D95 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */,
+				CD35F17D22B2A189005B6D95 /* DragonsListServiceTests.swift */,
+				CD35F18D22B2DED8005B6D95 /* NetworkManagerTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CD35F18A22B2C865005B6D95 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F18B22B2C88A005B6D95 /* XCTestCase.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CD3C83EF22B17AAA0041900B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C83F022B17ABE0041900B /* Dragon.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD3C83F822B183DA0041900B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C83F922B183DA0041900B /* Manager */,
+				CD3C83FE22B183DA0041900B /* EndPoint */,
+				CD3C840022B183DA0041900B /* Environment */,
+				CD3C840322B183DA0041900B /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CD3C83F922B183DA0041900B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C83FA22B183DA0041900B /* NetworkManager.swift */,
+				CD3C83FB22B183DA0041900B /* ParameterEncoding.swift */,
+				CD3C83FC22B183DA0041900B /* HTTPMethod.swift */,
+				CD3C83FD22B183DA0041900B /* EndPointType.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CD3C83FE22B183DA0041900B /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C83FF22B183DA0041900B /* DragonEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		CD3C840022B183DA0041900B /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C840122B183DA0041900B /* Environment.swift */,
+				CD3C840222B183DA0041900B /* Environment.plist */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		CD3C840322B183DA0041900B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C840422B183DA0041900B /* DragonsListService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CD783F0122B081F600F15F5D = {
+			isa = PBXGroup;
+			children = (
+				CD783F0C22B081F700F15F5D /* DragonsApp */,
+				CD783F2122B081F800F15F5D /* DragonsAppTests */,
+				CD783F0B22B081F700F15F5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD783F0B22B081F700F15F5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD783F0A22B081F700F15F5D /* DragonsApp.app */,
+				CD783F1E22B081F800F15F5D /* DragonsAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD783F0C22B081F700F15F5D /* DragonsApp */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C83F822B183DA0041900B /* Networking */,
+				CDC5CC7022B0B52100DEE1FD /* Scenes */,
+				CDC5CC6B22B0B15C00DEE1FD /* Protocols */,
+				CD3C83EF22B17AAA0041900B /* Model */,
+				CD783F0D22B081F700F15F5D /* AppDelegate.swift */,
+				CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */,
+				CD783F1422B081F800F15F5D /* Assets.xcassets */,
+				CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */,
+				CD783F1922B081F800F15F5D /* Info.plist */,
+			);
+			path = DragonsApp;
+			sourceTree = "<group>";
+		};
+		CD783F2122B081F800F15F5D /* DragonsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F18922B2C857005B6D95 /* Tests */,
+				CD35F18622B2C768005B6D95 /* ModelMocks */,
+				CD35F17F22B2A220005B6D95 /* ServiceMocks */,
+				CD35F18A22B2C865005B6D95 /* Extension */,
+				CD783F2422B081F800F15F5D /* Info.plist */,
+			);
+			path = DragonsAppTests;
+			sourceTree = "<group>";
+		};
+		CDC5CC6B22B0B15C00DEE1FD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CDC5CC6C22B0B16F00DEE1FD /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CDC5CC7022B0B52100DEE1FD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CDC5CC7122B0B52C00DEE1FD /* DragonsList */,
+				CDC5CC7222B0B53F00DEE1FD /* DragonDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CDC5CC7122B0B52C00DEE1FD /* DragonsList */ = {
+			isa = PBXGroup;
+			children = (
+				CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */,
+			);
+			path = DragonsList;
+			sourceTree = "<group>";
+		};
+		CDC5CC7222B0B53F00DEE1FD /* DragonDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DragonDetails;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD783F0922B081F700F15F5D /* DragonsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD783F2722B081F800F15F5D /* Build configuration list for PBXNativeTarget "DragonsApp" */;
+			buildPhases = (
+				CD783F0622B081F700F15F5D /* Sources */,
+				CD783F0722B081F700F15F5D /* Frameworks */,
+				CD783F0822B081F700F15F5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragonsApp;
+			productName = DragonsApp;
+			productReference = CD783F0A22B081F700F15F5D /* DragonsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD783F1D22B081F800F15F5D /* DragonsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD783F2A22B081F800F15F5D /* Build configuration list for PBXNativeTarget "DragonsAppTests" */;
+			buildPhases = (
+				CD783F1A22B081F800F15F5D /* Sources */,
+				CD783F1B22B081F800F15F5D /* Frameworks */,
+				CD783F1C22B081F800F15F5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD783F2022B081F800F15F5D /* PBXTargetDependency */,
+			);
+			name = DragonsAppTests;
+			productName = DragonsAppTests;
+			productReference = CD783F1E22B081F800F15F5D /* DragonsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD783F0222B081F600F15F5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Gabriel Silveira";
+				TargetAttributes = {
+					CD783F0922B081F700F15F5D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					CD783F1D22B081F800F15F5D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = CD783F0922B081F700F15F5D;
+					};
+				};
+			};
+			buildConfigurationList = CD783F0522B081F600F15F5D /* Build configuration list for PBXProject "DragonsApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD783F0122B081F600F15F5D;
+			productRefGroup = CD783F0B22B081F700F15F5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD783F0922B081F700F15F5D /* DragonsApp */,
+				CD783F1D22B081F800F15F5D /* DragonsAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD783F0822B081F700F15F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD783F1822B081F800F15F5D /* LaunchScreen.storyboard in Resources */,
+				CD3C840B22B183DA0041900B /* Environment.plist in Resources */,
+				CD783F1522B081F800F15F5D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD783F1C22B081F800F15F5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD35F18122B2A247005B6D95 /* SuccessDragonsList.json in Resources */,
+				CD35F18822B2C792005B6D95 /* DragonsList.json in Resources */,
+				CD35F18322B2A354005B6D95 /* ErrorDragonsList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD783F0622B081F700F15F5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3C83F122B17ABE0041900B /* Dragon.swift in Sources */,
+				CD3C840A22B183DA0041900B /* Environment.swift in Sources */,
+				CD3C840922B183DA0041900B /* DragonEndPoint.swift in Sources */,
+				CDC5CC6F22B0B21800DEE1FD /* AppCoordinator.swift in Sources */,
+				CD3C840622B183DA0041900B /* ParameterEncoding.swift in Sources */,
+				CD3C840522B183DA0041900B /* NetworkManager.swift in Sources */,
+				CD3C840722B183DA0041900B /* HTTPMethod.swift in Sources */,
+				CDC5CC7422B0B5CD00DEE1FD /* DragonsListCoordinator.swift in Sources */,
+				CD783F0E22B081F700F15F5D /* AppDelegate.swift in Sources */,
+				CD3C840822B183DA0041900B /* EndPointType.swift in Sources */,
+				CDC5CC6D22B0B16F00DEE1FD /* Coordinator.swift in Sources */,
+				CD3C840C22B183DA0041900B /* DragonsListService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD783F1A22B081F800F15F5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD35F18E22B2DED8005B6D95 /* NetworkManagerTests.swift in Sources */,
+				CD3C83BF22B1410E0041900B /* CoordinatorTests.swift in Sources */,
+				CD35F18C22B2C88A005B6D95 /* XCTestCase.swift in Sources */,
+				CD35F17E22B2A189005B6D95 /* DragonsListServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD783F2022B081F800F15F5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD783F0922B081F700F15F5D /* DragonsApp */;
+			targetProxy = CD783F1F22B081F800F15F5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD783F1722B081F800F15F5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD783F2522B081F800F15F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD783F2622B081F800F15F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD783F2822B081F800F15F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DragonsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.GabrielSilveira.DragonsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD783F2922B081F800F15F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DragonsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.GabrielSilveira.DragonsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD783F2B22B081F800F15F5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AC5F23QLW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DragonsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.GabrielSilveira.DragonsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragonsApp.app/DragonsApp";
+			};
+			name = Debug;
+		};
+		CD783F2C22B081F800F15F5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AC5F23QLW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DragonsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.GabrielSilveira.DragonsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragonsApp.app/DragonsApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD783F0522B081F600F15F5D /* Build configuration list for PBXProject "DragonsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD783F2522B081F800F15F5D /* Debug */,
+				CD783F2622B081F800F15F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD783F2722B081F800F15F5D /* Build configuration list for PBXNativeTarget "DragonsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD783F2822B081F800F15F5D /* Debug */,
+				CD783F2922B081F800F15F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD783F2A22B081F800F15F5D /* Build configuration list for PBXNativeTarget "DragonsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD783F2B22B081F800F15F5D /* Debug */,
+				CD783F2C22B081F800F15F5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD783F0222B081F600F15F5D /* Project object */;
+}
