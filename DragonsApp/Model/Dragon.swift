@@ -16,3 +16,5 @@ struct DragonsWrapper: Decodable {
 struct Dragon: Decodable {
     let title: String?
 }
+
+extension Dragon: Equatable {}

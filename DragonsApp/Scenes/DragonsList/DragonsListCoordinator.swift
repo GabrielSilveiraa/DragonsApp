@@ -19,7 +19,5 @@ class DragonsListCoordinator {
 
 extension DragonsListCoordinator: Coordinator {
     func start() {
-        let viewController = ViewController()
-        navigationController.pushViewController(viewController, animated: true)
     }
 }

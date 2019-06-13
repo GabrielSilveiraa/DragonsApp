@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD35F17E22B2A189005B6D95 /* DragonsListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F17D22B2A189005B6D95 /* DragonsListServiceTests.swift */; };
+		CD35F18122B2A247005B6D95 /* SuccessDragonsList.json in Resources */ = {isa = PBXBuildFile; fileRef = CD35F18022B2A247005B6D95 /* SuccessDragonsList.json */; };
+		CD35F18322B2A354005B6D95 /* ErrorDragonsList.json in Resources */ = {isa = PBXBuildFile; fileRef = CD35F18222B2A354005B6D95 /* ErrorDragonsList.json */; };
+		CD35F18822B2C792005B6D95 /* DragonsList.json in Resources */ = {isa = PBXBuildFile; fileRef = CD35F18722B2C792005B6D95 /* DragonsList.json */; };
+		CD35F18C22B2C88A005B6D95 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F18B22B2C88A005B6D95 /* XCTestCase.swift */; };
+		CD35F18E22B2DED8005B6D95 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F18D22B2DED8005B6D95 /* NetworkManagerTests.swift */; };
 		CD3C83BF22B1410E0041900B /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */; };
 		CD3C83F122B17ABE0041900B /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83F022B17ABE0041900B /* Dragon.swift */; };
 		CD3C840522B183DA0041900B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83FA22B183DA0041900B /* NetworkManager.swift */; };
@@ -18,10 +24,8 @@
 		CD3C840B22B183DA0041900B /* Environment.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD3C840222B183DA0041900B /* Environment.plist */; };
 		CD3C840C22B183DA0041900B /* DragonsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C840422B183DA0041900B /* DragonsListService.swift */; };
 		CD783F0E22B081F700F15F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD783F0D22B081F700F15F5D /* AppDelegate.swift */; };
-		CD783F1022B081F700F15F5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD783F0F22B081F700F15F5D /* ViewController.swift */; };
 		CD783F1522B081F800F15F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD783F1422B081F800F15F5D /* Assets.xcassets */; };
 		CD783F1822B081F800F15F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */; };
-		CD783F2322B081F800F15F5D /* DragonsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD783F2222B081F800F15F5D /* DragonsAppTests.swift */; };
 		CDC5CC6D22B0B16F00DEE1FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC6C22B0B16F00DEE1FD /* Coordinator.swift */; };
 		CDC5CC6F22B0B21800DEE1FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */; };
 		CDC5CC7422B0B5CD00DEE1FD /* DragonsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */; };
@@ -38,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD35F17D22B2A189005B6D95 /* DragonsListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListServiceTests.swift; sourceTree = "<group>"; };
+		CD35F18022B2A247005B6D95 /* SuccessDragonsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SuccessDragonsList.json; sourceTree = "<group>"; };
+		CD35F18222B2A354005B6D95 /* ErrorDragonsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ErrorDragonsList.json; sourceTree = "<group>"; };
+		CD35F18722B2C792005B6D95 /* DragonsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DragonsList.json; sourceTree = "<group>"; };
+		CD35F18B22B2C88A005B6D95 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		CD35F18D22B2DED8005B6D95 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		CD3C83F022B17ABE0041900B /* Dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
 		CD3C83FA22B183DA0041900B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -50,12 +60,10 @@
 		CD3C840422B183DA0041900B /* DragonsListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonsListService.swift; sourceTree = "<group>"; };
 		CD783F0A22B081F700F15F5D /* DragonsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD783F0D22B081F700F15F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD783F0F22B081F700F15F5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD783F1422B081F800F15F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD783F1722B081F800F15F5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD783F1922B081F800F15F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD783F1E22B081F800F15F5D /* DragonsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD783F2222B081F800F15F5D /* DragonsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsAppTests.swift; sourceTree = "<group>"; };
 		CD783F2422B081F800F15F5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC5CC6C22B0B16F00DEE1FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -80,6 +88,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD35F17F22B2A220005B6D95 /* ServiceMocks */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F18022B2A247005B6D95 /* SuccessDragonsList.json */,
+				CD35F18222B2A354005B6D95 /* ErrorDragonsList.json */,
+			);
+			path = ServiceMocks;
+			sourceTree = "<group>";
+		};
+		CD35F18622B2C768005B6D95 /* ModelMocks */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F18722B2C792005B6D95 /* DragonsList.json */,
+			);
+			path = ModelMocks;
+			sourceTree = "<group>";
+		};
+		CD35F18922B2C857005B6D95 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */,
+				CD35F17D22B2A189005B6D95 /* DragonsListServiceTests.swift */,
+				CD35F18D22B2DED8005B6D95 /* NetworkManagerTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CD35F18A22B2C865005B6D95 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F18B22B2C88A005B6D95 /* XCTestCase.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		CD3C83EF22B17AAA0041900B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +205,6 @@
 				CD3C83EF22B17AAA0041900B /* Model */,
 				CD783F0D22B081F700F15F5D /* AppDelegate.swift */,
 				CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */,
-				CD783F0F22B081F700F15F5D /* ViewController.swift */,
 				CD783F1422B081F800F15F5D /* Assets.xcassets */,
 				CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */,
 				CD783F1922B081F800F15F5D /* Info.plist */,
@@ -173,9 +215,11 @@
 		CD783F2122B081F800F15F5D /* DragonsAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD783F2222B081F800F15F5D /* DragonsAppTests.swift */,
+				CD35F18922B2C857005B6D95 /* Tests */,
+				CD35F18622B2C768005B6D95 /* ModelMocks */,
+				CD35F17F22B2A220005B6D95 /* ServiceMocks */,
+				CD35F18A22B2C865005B6D95 /* Extension */,
 				CD783F2422B081F800F15F5D /* Info.plist */,
-				CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */,
 			);
 			path = DragonsAppTests;
 			sourceTree = "<group>";
@@ -303,6 +347,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD35F18122B2A247005B6D95 /* SuccessDragonsList.json in Resources */,
+				CD35F18822B2C792005B6D95 /* DragonsList.json in Resources */,
+				CD35F18322B2A354005B6D95 /* ErrorDragonsList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +365,6 @@
 				CD3C840922B183DA0041900B /* DragonEndPoint.swift in Sources */,
 				CDC5CC6F22B0B21800DEE1FD /* AppCoordinator.swift in Sources */,
 				CD3C840622B183DA0041900B /* ParameterEncoding.swift in Sources */,
-				CD783F1022B081F700F15F5D /* ViewController.swift in Sources */,
 				CD3C840522B183DA0041900B /* NetworkManager.swift in Sources */,
 				CD3C840722B183DA0041900B /* HTTPMethod.swift in Sources */,
 				CDC5CC7422B0B5CD00DEE1FD /* DragonsListCoordinator.swift in Sources */,
@@ -333,8 +379,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD35F18E22B2DED8005B6D95 /* NetworkManagerTests.swift in Sources */,
 				CD3C83BF22B1410E0041900B /* CoordinatorTests.swift in Sources */,
-				CD783F2322B081F800F15F5D /* DragonsAppTests.swift in Sources */,
+				CD35F18C22B2C88A005B6D95 /* XCTestCase.swift in Sources */,
+				CD35F17E22B2A189005B6D95 /* DragonsListServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +531,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DragonsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -503,6 +555,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DragonsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,6 +579,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AC5F23QLW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DragonsAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -544,6 +604,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AC5F23QLW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DragonsAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

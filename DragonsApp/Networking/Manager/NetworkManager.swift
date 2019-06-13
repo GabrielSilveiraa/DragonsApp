@@ -31,7 +31,11 @@ protocol NetworkManagerProtocol: AnyObject {
 }
 
 class NetworkManager {
-    private var task: URLSessionTask?
+    private var session: URLSession
+    
+    init(session: URLSession) {
+        self.session = session
+    }
     
     private func buildRequest(from route: EndPointType) throws -> URLRequest {
         var request = URLRequest(url: route.baseURL.appendingPathComponent(route.path),
@@ -54,7 +58,7 @@ class NetworkManager {
 
 extension NetworkManager: NetworkManagerProtocol {
     func request<T: Decodable>(_ route: EndPointType, completion: @escaping NetworkCompletion<T>) {
-        let session = URLSession.shared
+        var task: URLSessionTask?
         do {
             let request = try self.buildRequest(from: route)
             task = session.dataTask(with: request) { data, response, error in
@@ -78,7 +82,6 @@ extension NetworkManager: NetworkManagerProtocol {
                         let jsonResponse = try JSONDecoder().decode(T.self, from: responseData)
                         completion(.success(jsonResponse))
                     } catch {
-                        print(error)
                         completion(.failure(NetworkError.unableToDecode))
                     }
                 case .failure(let error):
@@ -89,6 +92,6 @@ extension NetworkManager: NetworkManagerProtocol {
         } catch {
             completion(.failure(error))
         }
-        self.task?.resume()
+        task?.resume()
     }
 }
