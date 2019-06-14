@@ -9,14 +9,14 @@
 import Foundation
 
 enum DragonsListServiceError: Error, Equatable {
-    case requestFailed
+    case failed
 }
 
 extension DragonsListServiceError: LocalizedError {
     var errorDescription: String? {
         switch self {
-        case .requestFailed:
-            return ""
+        case .failed:
+            return "failedError".localized
         }
     }
 }
@@ -40,7 +40,7 @@ extension DragonsListService: DragonsListServiceProtocol {
             switch result {
             case .success(let dragonsWrapper):
                 guard dragonsWrapper.success else {
-                    completion(.failure(DragonsListServiceError.requestFailed))
+                    completion(.failure(DragonsListServiceError.failed))
                     return
                 }
                 let dragons = dragonsWrapper.dragons.filter {$0?.title != nil}.compactMap {$0}

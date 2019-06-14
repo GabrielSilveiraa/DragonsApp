@@ -39,6 +39,7 @@ final class DragonsListViewController: UIViewController {
         configBind()
     }
     
+    // MARK: - Functions
     private func configBind() {
         viewModel.dragonCells.bind { [weak self] _ in
             guard let self = self else { return }

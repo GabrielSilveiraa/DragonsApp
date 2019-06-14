@@ -5,7 +5,7 @@
 //  Created by Gabriel Silveira on 14/06/19.
 //  Copyright © 2019 Gabriel Silveira. All rights reserved.
 //
-
+// swiftlint:disable force_cast
 import XCTest
 @testable import DragonsApp
 
@@ -39,6 +39,22 @@ class DragonsListViewControllerTests: XCTestCase {
         XCTAssertEqual(dragonsListViewController.tableView(tableView, numberOfRowsInSection: 0), 1)
         let cell = dragonsListViewController.tableView(tableView, cellForRowAt: IndexPath(row: 0, section: 0))
         XCTAssertEqual(cell.textLabel?.text, "Dragon Test")
+    }
+    
+    func testShowError() {
+        UIApplication.shared.keyWindow?.rootViewController = dragonsListViewController
+        fakeDragonsListViewModel.error.value = "Error Test"
+        XCTAssertTrue(UIApplication.shared.keyWindow?.rootViewController?.presentedViewController is UIAlertController)
+        let alert = UIApplication.shared.keyWindow?.rootViewController?.presentedViewController as! UIAlertController
+        XCTAssertEqual(alert.message, "Error Test")
+    }
+    
+    func testLoading() {
+        let window = UIWindow()
+        window.addSubview(dragonsListViewController.view)
+        XCTAssertTrue(dragonsListViewController.baseView.activityIndicator.isHidden)
+        fakeDragonsListViewModel.loading.value = true
+        XCTAssertFalse(dragonsListViewController.baseView.activityIndicator.isHidden)
     }
 }
 

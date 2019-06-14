@@ -37,7 +37,8 @@ class DragonsListServiceTests: XCTestCase {
             serviceResult = result
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
-            XCTAssertEqual(error as! DragonsListServiceError, DragonsListServiceError.requestFailed)
+            XCTAssertEqual(error as! DragonsListServiceError, DragonsListServiceError.failed)
+            XCTAssertEqual(error.localizedDescription, "A requisição falhou")
         }
     }
     

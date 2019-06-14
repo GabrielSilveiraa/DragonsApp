@@ -32,7 +32,7 @@ class NetworkManager {
     private func handleNetworkResponse(_ response: HTTPURLResponse) -> NetworkResponse {
         switch response.statusCode {
         case 200...299: return .success
-        case 401...500: return .failure(NetworkError.authenticationError)
+        case 401...500: return .failure(NetworkError.authentication)
         case 501...599: return .failure(NetworkError.badRequest)
         case 600: return .failure(NetworkError.outdated)
         default: return .failure(NetworkError.failed)

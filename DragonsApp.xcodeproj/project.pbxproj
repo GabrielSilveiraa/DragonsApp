@@ -41,6 +41,8 @@
 		CDE9784C22B3E8F000930C43 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9784B22B3E8F000930C43 /* NetworkResponse.swift */; };
 		CDE9785022B3ECD000930C43 /* DragonsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9784F22B3ECD000930C43 /* DragonsListViewControllerTests.swift */; };
 		CDE9785322B3F77A00930C43 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9785222B3F77A00930C43 /* UIViewController.swift */; };
+		CDE9785522B4202400930C43 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDE9785422B4202400930C43 /* Localizable.strings */; };
+		CDE9785822B4215F00930C43 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9785722B4215F00930C43 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		CDE9784B22B3E8F000930C43 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		CDE9784F22B3ECD000930C43 /* DragonsListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListViewControllerTests.swift; sourceTree = "<group>"; };
 		CDE9785222B3F77A00930C43 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CDE9785422B4202400930C43 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CDE9785722B4215F00930C43 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,9 +294,9 @@
 				CD3C83EF22B17AAA0041900B /* Model */,
 				CDE9785122B3F76100930C43 /* Extensions */,
 				CD35F19922B33601005B6D95 /* Utils */,
+				CDE9785622B4202F00930C43 /* Resources */,
 				CD783F0D22B081F700F15F5D /* AppDelegate.swift */,
 				CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */,
-				CD783F1422B081F800F15F5D /* Assets.xcassets */,
 				CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */,
 				CD783F1922B081F800F15F5D /* Info.plist */,
 				CD35F1A722B3499B005B6D95 /* Framework */,
@@ -369,8 +373,18 @@
 			isa = PBXGroup;
 			children = (
 				CDE9785222B3F77A00930C43 /* UIViewController.swift */,
+				CDE9785722B4215F00930C43 /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CDE9785622B4202F00930C43 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD783F1422B081F800F15F5D /* Assets.xcassets */,
+				CDE9785422B4202400930C43 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +471,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD783F1822B081F800F15F5D /* LaunchScreen.storyboard in Resources */,
+				CDE9785522B4202400930C43 /* Localizable.strings in Resources */,
 				CD3C840B22B183DA0041900B /* Environment.plist in Resources */,
 				CD783F1522B081F800F15F5D /* Assets.xcassets in Resources */,
 			);
@@ -531,6 +546,7 @@
 				CD35F19622B3357D005B6D95 /* DragonsListViewController.swift in Sources */,
 				CD3C840622B183DA0041900B /* ParameterEncoding.swift in Sources */,
 				CD3C840522B183DA0041900B /* NetworkManager.swift in Sources */,
+				CDE9785822B4215F00930C43 /* String.swift in Sources */,
 				CD3C840722B183DA0041900B /* HTTPMethod.swift in Sources */,
 				CDC5CC7422B0B5CD00DEE1FD /* DragonsListCoordinator.swift in Sources */,
 				CD783F0E22B081F700F15F5D /* AppDelegate.swift in Sources */,

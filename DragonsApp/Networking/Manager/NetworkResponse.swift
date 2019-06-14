@@ -16,7 +16,7 @@ enum NetworkResponse {
 enum NetworkError: Error {
     case noConnection
     case failed
-    case authenticationError
+    case authentication
     case badRequest
     case outdated
     case noData
@@ -28,9 +28,28 @@ extension NetworkError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .noConnection:
-            return ""
-        default:
-            return ""
+            return "noConnectionError".localized
+            
+        case .failed:
+            return "failedError".localized
+            
+        case .authentication:
+            return "authenticationError".localized
+            
+        case .badRequest:
+            return "badRequestError".localized
+        
+        case .outdated:
+            return "outdatedError".localized
+            
+        case .noData:
+            return "noDataError".localized
+            
+        case .noResponse:
+            return "noResponseError".localized
+            
+        case .unableToDecode:
+            return "unableToDecodeError".localized
         }
     }
 }
