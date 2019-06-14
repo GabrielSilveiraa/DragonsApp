@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum DragonsListError: Error, Equatable {
+enum DragonsListServiceError: Error, Equatable {
     case requestFailed
 }
 
@@ -31,11 +31,12 @@ extension DragonsListService: DragonsListServiceProtocol {
             switch result {
             case .success(let dragonsWrapper):
                 guard dragonsWrapper.success else {
-                    completion(.failure(DragonsListError.requestFailed))
+                    completion(.failure(DragonsListServiceError.requestFailed))
                     return
                 }
-                let dragons = dragonsWrapper.dragons.filter {$0?.title != nil}.compactMap{$0}
+                let dragons = dragonsWrapper.dragons.filter {$0?.title != nil}.compactMap {$0}
                 completion(.success(dragons))
+                
             case .failure(let error):
                 completion(.failure(error))
             }

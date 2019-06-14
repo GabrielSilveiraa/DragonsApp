@@ -13,10 +13,12 @@ class CoordinatorTests: XCTestCase {
     var coordinator: FakeCoordinator!
     
     override func setUp() {
+        super.setUp()
         coordinator = FakeCoordinator()
     }
 
     override func tearDown() {
+        super.tearDown()
         coordinator = nil
     }
 

@@ -5,7 +5,8 @@
 //  Created by Gabriel Silveira on 13/06/19.
 //  Copyright © 2019 Gabriel Silveira. All rights reserved.
 //
-
+// swiftlint:disable force_cast
+// swiftlint:disable force_unwrapping
 import XCTest
 @testable import DragonsApp
 
@@ -123,9 +124,11 @@ class URLSessionMock: URLSession {
         self.response = response
         self.error = error
     }
+    
     var data: Data?
     var response: HTTPURLResponse?
     var error: Error?
+    
     override func dataTask(with request: URLRequest, completionHandler: @escaping CompletionHandler) -> URLSessionDataTask {
         let data = self.data
         let response = self.response
@@ -138,6 +141,7 @@ class URLSessionMock: URLSession {
 
 class URLSessionDataTaskMock: URLSessionDataTask {
     private let closure: () -> Void
+    
     init(closure: @escaping () -> Void) {
         self.closure = closure
     }
@@ -178,7 +182,7 @@ enum EndPoint: EndPointType {
         return .urlEncoding
     }
     
-    var parameters: [String : Any]? {
-        return nil
+    var parameters: [String : Any] {
+        return [:]
     }
 }

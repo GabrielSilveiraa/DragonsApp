@@ -84,6 +84,7 @@ extension NetworkManager: NetworkManagerProtocol {
                     } catch {
                         completion(.failure(NetworkError.unableToDecode))
                     }
+                    
                 case .failure(let error):
                     completion(.failure(error))
                 }

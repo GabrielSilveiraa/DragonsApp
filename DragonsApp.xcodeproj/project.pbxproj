@@ -13,6 +13,11 @@
 		CD35F18822B2C792005B6D95 /* DragonsList.json in Resources */ = {isa = PBXBuildFile; fileRef = CD35F18722B2C792005B6D95 /* DragonsList.json */; };
 		CD35F18C22B2C88A005B6D95 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F18B22B2C88A005B6D95 /* XCTestCase.swift */; };
 		CD35F18E22B2DED8005B6D95 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F18D22B2DED8005B6D95 /* NetworkManagerTests.swift */; };
+		CD35F19622B3357D005B6D95 /* DragonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F19322B3357D005B6D95 /* DragonsListViewController.swift */; };
+		CD35F19722B3357D005B6D95 /* DragonsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F19422B3357D005B6D95 /* DragonsListView.swift */; };
+		CD35F19822B3357D005B6D95 /* DragonsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F19522B3357D005B6D95 /* DragonsListViewModel.swift */; };
+		CD35F19B22B3364C005B6D95 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F19A22B3364C005B6D95 /* Dynamic.swift */; };
+		CD35F19D22B336CA005B6D95 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F19C22B336CA005B6D95 /* BaseView.swift */; };
 		CD3C83BF22B1410E0041900B /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */; };
 		CD3C83F122B17ABE0041900B /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83F022B17ABE0041900B /* Dragon.swift */; };
 		CD3C840522B183DA0041900B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83FA22B183DA0041900B /* NetworkManager.swift */; };
@@ -48,6 +53,11 @@
 		CD35F18722B2C792005B6D95 /* DragonsList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DragonsList.json; sourceTree = "<group>"; };
 		CD35F18B22B2C88A005B6D95 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		CD35F18D22B2DED8005B6D95 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		CD35F19322B3357D005B6D95 /* DragonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListViewController.swift; sourceTree = "<group>"; };
+		CD35F19422B3357D005B6D95 /* DragonsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListView.swift; sourceTree = "<group>"; };
+		CD35F19522B3357D005B6D95 /* DragonsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListViewModel.swift; sourceTree = "<group>"; };
+		CD35F19A22B3364C005B6D95 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		CD35F19C22B336CA005B6D95 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		CD3C83F022B17ABE0041900B /* Dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
 		CD3C83FA22B183DA0041900B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -121,6 +131,47 @@
 				CD35F18B22B2C88A005B6D95 /* XCTestCase.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		CD35F19922B33601005B6D95 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F19A22B3364C005B6D95 /* Dynamic.swift */,
+				CD35F19C22B336CA005B6D95 /* BaseView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CD35F19E22B33B70005B6D95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F19522B3357D005B6D95 /* DragonsListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD35F19F22B33B7C005B6D95 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F19322B3357D005B6D95 /* DragonsListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CD35F1A022B33B8C005B6D95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F19422B3357D005B6D95 /* DragonsListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD35F1A122B33B94005B6D95 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		CD3C83EF22B17AAA0041900B /* Model */ = {
@@ -203,6 +254,7 @@
 				CDC5CC7022B0B52100DEE1FD /* Scenes */,
 				CDC5CC6B22B0B15C00DEE1FD /* Protocols */,
 				CD3C83EF22B17AAA0041900B /* Model */,
+				CD35F19922B33601005B6D95 /* Utils */,
 				CD783F0D22B081F700F15F5D /* AppDelegate.swift */,
 				CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */,
 				CD783F1422B081F800F15F5D /* Assets.xcassets */,
@@ -244,7 +296,10 @@
 		CDC5CC7122B0B52C00DEE1FD /* DragonsList */ = {
 			isa = PBXGroup;
 			children = (
-				CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */,
+				CD35F1A122B33B94005B6D95 /* Coordinator */,
+				CD35F1A022B33B8C005B6D95 /* View */,
+				CD35F19F22B33B7C005B6D95 /* ViewController */,
+				CD35F19E22B33B70005B6D95 /* ViewModel */,
 			);
 			path = DragonsList;
 			sourceTree = "<group>";
@@ -266,6 +321,7 @@
 				CD783F0622B081F700F15F5D /* Sources */,
 				CD783F0722B081F700F15F5D /* Frameworks */,
 				CD783F0822B081F700F15F5D /* Resources */,
+				CD35F1A322B33F62005B6D95 /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -355,6 +411,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CD35F1A322B33F62005B6D95 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD783F0622B081F700F15F5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -362,8 +439,11 @@
 			files = (
 				CD3C83F122B17ABE0041900B /* Dragon.swift in Sources */,
 				CD3C840A22B183DA0041900B /* Environment.swift in Sources */,
+				CD35F19822B3357D005B6D95 /* DragonsListViewModel.swift in Sources */,
+				CD35F19D22B336CA005B6D95 /* BaseView.swift in Sources */,
 				CD3C840922B183DA0041900B /* DragonEndPoint.swift in Sources */,
 				CDC5CC6F22B0B21800DEE1FD /* AppCoordinator.swift in Sources */,
+				CD35F19622B3357D005B6D95 /* DragonsListViewController.swift in Sources */,
 				CD3C840622B183DA0041900B /* ParameterEncoding.swift in Sources */,
 				CD3C840522B183DA0041900B /* NetworkManager.swift in Sources */,
 				CD3C840722B183DA0041900B /* HTTPMethod.swift in Sources */,
@@ -371,7 +451,9 @@
 				CD783F0E22B081F700F15F5D /* AppDelegate.swift in Sources */,
 				CD3C840822B183DA0041900B /* EndPointType.swift in Sources */,
 				CDC5CC6D22B0B16F00DEE1FD /* Coordinator.swift in Sources */,
+				CD35F19B22B3364C005B6D95 /* Dynamic.swift in Sources */,
 				CD3C840C22B183DA0041900B /* DragonsListService.swift in Sources */,
+				CD35F19722B3357D005B6D95 /* DragonsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,10 +35,10 @@ extension DragonApi: EndPointType {
         return .urlEncoding
     }
     
-    var parameters: [String : Any]? {
+    var parameters: [String : Any] {
         switch self {
         case .dragonsList:
-            return nil
+            return [:]
         }
     }
 }
