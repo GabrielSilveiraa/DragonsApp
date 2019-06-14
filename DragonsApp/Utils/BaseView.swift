@@ -36,10 +36,10 @@ class BaseView: UIView {
     func initialize() { fatalError("Must be overridden") }
     
     /// Default implementation does nothing
-    func installConstraints() { fatalError("Must be overridden") }
+    func setupConstraints() { fatalError("Must be overridden") }
     
     private func setup() {
         self.initialize()
-        self.installConstraints()
+        self.setupConstraints()
     }
 }

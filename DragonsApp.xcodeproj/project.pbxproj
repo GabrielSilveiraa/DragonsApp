@@ -18,6 +18,9 @@
 		CD35F19822B3357D005B6D95 /* DragonsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F19522B3357D005B6D95 /* DragonsListViewModel.swift */; };
 		CD35F19B22B3364C005B6D95 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F19A22B3364C005B6D95 /* Dynamic.swift */; };
 		CD35F19D22B336CA005B6D95 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F19C22B336CA005B6D95 /* BaseView.swift */; };
+		CD35F1A622B343DE005B6D95 /* DragonsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F1A522B343DE005B6D95 /* DragonsListTableViewCell.swift */; };
+		CD35F1A922B349BB005B6D95 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD35F1A822B349BB005B6D95 /* SnapKit.framework */; };
+		CD35F1AC22B34B80005B6D95 /* DragonsListCellViewModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35F1AB22B34B80005B6D95 /* DragonsListCellViewModelViewModel.swift */; };
 		CD3C83BF22B1410E0041900B /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */; };
 		CD3C83F122B17ABE0041900B /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83F022B17ABE0041900B /* Dragon.swift */; };
 		CD3C840522B183DA0041900B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C83FA22B183DA0041900B /* NetworkManager.swift */; };
@@ -58,6 +61,9 @@
 		CD35F19522B3357D005B6D95 /* DragonsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListViewModel.swift; sourceTree = "<group>"; };
 		CD35F19A22B3364C005B6D95 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		CD35F19C22B336CA005B6D95 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		CD35F1A522B343DE005B6D95 /* DragonsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListTableViewCell.swift; sourceTree = "<group>"; };
+		CD35F1A822B349BB005B6D95 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = SOURCE_ROOT; };
+		CD35F1AB22B34B80005B6D95 /* DragonsListCellViewModelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListCellViewModelViewModel.swift; sourceTree = "<group>"; };
 		CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		CD3C83F022B17ABE0041900B /* Dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
 		CD3C83FA22B183DA0041900B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD35F1A922B349BB005B6D95 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				CD35F19522B3357D005B6D95 /* DragonsListViewModel.swift */,
+				CD35F1AB22B34B80005B6D95 /* DragonsListCellViewModelViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 		CD35F1A022B33B8C005B6D95 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CD35F1A422B343BC005B6D95 /* Cell */,
 				CD35F19422B3357D005B6D95 /* DragonsListView.swift */,
 			);
 			path = View;
@@ -172,6 +181,22 @@
 				CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		CD35F1A422B343BC005B6D95 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F1A522B343DE005B6D95 /* DragonsListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CD35F1A722B3499B005B6D95 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F1A822B349BB005B6D95 /* SnapKit.framework */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 		CD3C83EF22B17AAA0041900B /* Model */ = {
@@ -260,6 +285,7 @@
 				CD783F1422B081F800F15F5D /* Assets.xcassets */,
 				CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */,
 				CD783F1922B081F800F15F5D /* Info.plist */,
+				CD35F1A722B3499B005B6D95 /* Framework */,
 			);
 			path = DragonsApp;
 			sourceTree = "<group>";
@@ -322,6 +348,7 @@
 				CD783F0722B081F700F15F5D /* Frameworks */,
 				CD783F0822B081F700F15F5D /* Resources */,
 				CD35F1A322B33F62005B6D95 /* Swift Lint */,
+				CD35F1AA22B349C9005B6D95 /* Carthage Script */,
 			);
 			buildRules = (
 			);
@@ -430,6 +457,25 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		CD35F1AA22B349C9005B6D95 /* Carthage Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = "Carthage Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -438,9 +484,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD3C83F122B17ABE0041900B /* Dragon.swift in Sources */,
+				CD35F1AC22B34B80005B6D95 /* DragonsListCellViewModelViewModel.swift in Sources */,
 				CD3C840A22B183DA0041900B /* Environment.swift in Sources */,
 				CD35F19822B3357D005B6D95 /* DragonsListViewModel.swift in Sources */,
 				CD35F19D22B336CA005B6D95 /* BaseView.swift in Sources */,
+				CD35F1A622B343DE005B6D95 /* DragonsListTableViewCell.swift in Sources */,
 				CD3C840922B183DA0041900B /* DragonEndPoint.swift in Sources */,
 				CDC5CC6F22B0B21800DEE1FD /* AppCoordinator.swift in Sources */,
 				CD35F19622B3357D005B6D95 /* DragonsListViewController.swift in Sources */,

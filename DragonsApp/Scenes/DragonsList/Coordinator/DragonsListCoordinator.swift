@@ -23,6 +23,9 @@ class DragonsListCoordinator {
 
 extension DragonsListCoordinator: Coordinator {
     func start() {
+        let viewModel = DragonsListViewModel(navigationDelegate: self)
+        let viewController = DragonsListViewController(viewModel: viewModel)
+        navigationController.viewControllers = [viewController]
     }
 }
 

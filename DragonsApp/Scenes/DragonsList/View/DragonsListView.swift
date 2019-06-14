@@ -7,14 +7,27 @@
 //
 
 import UIKit
+import SnapKit
 
 final class DragonsListView: BaseView {
+    let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.register(DragonsListTableViewCell.self,
+                           forCellReuseIdentifier: DragonsListTableViewCell.identifier)
+        return tableView
+    }()
     
     override func initialize() {
-        //Add subviews here
+        addSubview(tableView)
     }
     
-    override func installConstraints() {
-        //Setup the subviews constraints here
+    override func setupConstraints() {
+        setupTableViewConstraints()
+    }
+    
+    private func setupTableViewConstraints() {
+        tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
 }

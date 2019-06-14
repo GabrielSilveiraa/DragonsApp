@@ -11,6 +11,8 @@ import UIKit
 final class DragonsListViewController: UIViewController {
     private(set) lazy var baseView: DragonsListView = {
         let view = DragonsListView()
+        view.tableView.delegate = self
+        view.tableView.dataSource = self
         return view
     }()
     
@@ -38,6 +40,29 @@ final class DragonsListViewController: UIViewController {
     }
     
     private func configBind() {
-        //Config the binds to viewModel here
+        viewModel.dragonCells.bind { [weak self] _ in
+            guard let self = self else { return }
+            self.baseView.tableView.reloadData()
+        }
+    }
+}
+
+extension DragonsListViewController: UITableViewDelegate {
+    
+}
+
+extension DragonsListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.dragonCells.value.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: DragonsListTableViewCell.identifier,
+                                                       for: indexPath) as? DragonsListTableViewCell else {
+                                                        return UITableViewCell()
+        }
+        let cellViewModel = viewModel.dragonCells.value[indexPath.row]
+        cell.configure(viewModel: cellViewModel)
+        return cell
     }
 }
