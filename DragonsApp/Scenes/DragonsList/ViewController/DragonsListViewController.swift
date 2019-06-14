@@ -44,6 +44,16 @@ final class DragonsListViewController: UIViewController {
             guard let self = self else { return }
             self.baseView.tableView.reloadData()
         }
+        
+        viewModel.loading.bindAndFire { [weak baseView] isLoading in
+            guard let baseView = baseView else { return }
+            isLoading ? baseView.activityIndicator.startAnimating() : baseView.activityIndicator.stopAnimating()
+        }
+        
+        viewModel.error.bind { [weak self] error in
+            guard let self = self, let error = error else { return }
+            self.showAlert(message: error)
+        }
     }
 }
 

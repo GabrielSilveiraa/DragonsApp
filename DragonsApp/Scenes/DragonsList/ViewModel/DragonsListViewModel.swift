@@ -10,12 +10,16 @@ import Foundation
 
 protocol DragonsListViewModelProtocol: AnyObject {
     var dragonCells: Dynamic<[DragonsListCellViewModelProtocol]> { get }
+    var loading: Dynamic<Bool> { get }
+    var error: Dynamic<String?> { get }
 }
 
 final class DragonsListViewModel {
     private let service: DragonsListServiceProtocol
     private weak var navigationDelegate: DragonsListNavigationDelegate?
     var dragonCells: Dynamic<[DragonsListCellViewModelProtocol]> = Dynamic([])
+    var loading: Dynamic<Bool> = Dynamic(false)
+    var error: Dynamic<String?> = Dynamic(nil)
     
     init(service: DragonsListServiceProtocol = DragonsListService(),
          navigationDelegate: DragonsListNavigationDelegate? = nil) {
@@ -25,13 +29,15 @@ final class DragonsListViewModel {
     }
     
     private func loadDragons() {
+        loading.value = true
         service.getDragonsList { (result: Result<[Dragon], Error>) in
+            self.loading.value = false
             switch result {
             case .success(let dragons):
                 self.dragonCells.value = dragons.map { DragonsListCellViewModel(model: $0) }
                 
             case .failure(let error):
-                break
+                self.error.value = error.localizedDescription
             }
         }
     }

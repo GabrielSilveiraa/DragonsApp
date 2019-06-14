@@ -17,17 +17,30 @@ final class DragonsListView: BaseView {
         return tableView
     }()
     
+    let activityIndicator: UIActivityIndicatorView = {
+        let activityIndicator = UIActivityIndicatorView(style: .gray)
+        return activityIndicator
+    }()
+    
     override func initialize() {
         addSubview(tableView)
+        addSubview(activityIndicator)
     }
     
     override func setupConstraints() {
         setupTableViewConstraints()
+        setupActivityIndicatorConstraints()
     }
     
     private func setupTableViewConstraints() {
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
+        }
+    }
+    
+    private func setupActivityIndicatorConstraints() {
+        activityIndicator.snp.makeConstraints {
+            $0.center.equalToSuperview()
         }
     }
 }

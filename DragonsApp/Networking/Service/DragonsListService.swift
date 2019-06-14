@@ -12,6 +12,15 @@ enum DragonsListServiceError: Error, Equatable {
     case requestFailed
 }
 
+extension DragonsListServiceError: LocalizedError {
+    var errorDescription: String? {
+        switch self {
+        case .requestFailed:
+            return ""
+        }
+    }
+}
+
 protocol DragonsListServiceProtocol: AnyObject {
     func getDragonsList(completion: @escaping (Result<[Dragon], Error>) -> Void)
 }

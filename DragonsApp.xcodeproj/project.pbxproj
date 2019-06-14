@@ -37,6 +37,10 @@
 		CDC5CC6D22B0B16F00DEE1FD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC6C22B0B16F00DEE1FD /* Coordinator.swift */; };
 		CDC5CC6F22B0B21800DEE1FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */; };
 		CDC5CC7422B0B5CD00DEE1FD /* DragonsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */; };
+		CDE9784A22B3D64200930C43 /* DragonsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9784922B3D64200930C43 /* DragonsListViewModelTests.swift */; };
+		CDE9784C22B3E8F000930C43 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9784B22B3E8F000930C43 /* NetworkResponse.swift */; };
+		CDE9785022B3ECD000930C43 /* DragonsListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9784F22B3ECD000930C43 /* DragonsListViewControllerTests.swift */; };
+		CDE9785322B3F77A00930C43 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE9785222B3F77A00930C43 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,10 @@
 		CDC5CC6C22B0B16F00DEE1FD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		CDC5CC7322B0B5CD00DEE1FD /* DragonsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListCoordinator.swift; sourceTree = "<group>"; };
+		CDE9784922B3D64200930C43 /* DragonsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListViewModelTests.swift; sourceTree = "<group>"; };
+		CDE9784B22B3E8F000930C43 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		CDE9784F22B3ECD000930C43 /* DragonsListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsListViewControllerTests.swift; sourceTree = "<group>"; };
+		CDE9785222B3F77A00930C43 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +133,8 @@
 		CD35F18922B2C857005B6D95 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				CDE9784D22B3ECA200930C43 /* Scenes */,
 				CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */,
-				CD35F17D22B2A189005B6D95 /* DragonsListServiceTests.swift */,
 				CD35F18D22B2DED8005B6D95 /* NetworkManagerTests.swift */,
 			);
 			path = Tests;
@@ -222,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				CD3C83FA22B183DA0041900B /* NetworkManager.swift */,
+				CDE9784B22B3E8F000930C43 /* NetworkResponse.swift */,
 				CD3C83FB22B183DA0041900B /* ParameterEncoding.swift */,
 				CD3C83FC22B183DA0041900B /* HTTPMethod.swift */,
 				CD3C83FD22B183DA0041900B /* EndPointType.swift */,
@@ -279,6 +288,7 @@
 				CDC5CC7022B0B52100DEE1FD /* Scenes */,
 				CDC5CC6B22B0B15C00DEE1FD /* Protocols */,
 				CD3C83EF22B17AAA0041900B /* Model */,
+				CDE9785122B3F76100930C43 /* Extensions */,
 				CD35F19922B33601005B6D95 /* Utils */,
 				CD783F0D22B081F700F15F5D /* AppDelegate.swift */,
 				CDC5CC6E22B0B21800DEE1FD /* AppCoordinator.swift */,
@@ -335,6 +345,32 @@
 			children = (
 			);
 			path = DragonDetails;
+			sourceTree = "<group>";
+		};
+		CDE9784D22B3ECA200930C43 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CDE9784E22B3ECAA00930C43 /* DragonsList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CDE9784E22B3ECAA00930C43 /* DragonsList */ = {
+			isa = PBXGroup;
+			children = (
+				CD35F17D22B2A189005B6D95 /* DragonsListServiceTests.swift */,
+				CDE9784922B3D64200930C43 /* DragonsListViewModelTests.swift */,
+				CDE9784F22B3ECD000930C43 /* DragonsListViewControllerTests.swift */,
+			);
+			path = DragonsList;
+			sourceTree = "<group>";
+		};
+		CDE9785122B3F76100930C43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDE9785222B3F77A00930C43 /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD3C83F122B17ABE0041900B /* Dragon.swift in Sources */,
+				CDE9784C22B3E8F000930C43 /* NetworkResponse.swift in Sources */,
 				CD35F1AC22B34B80005B6D95 /* DragonsListCellViewModelViewModel.swift in Sources */,
 				CD3C840A22B183DA0041900B /* Environment.swift in Sources */,
 				CD35F19822B3357D005B6D95 /* DragonsListViewModel.swift in Sources */,
@@ -500,6 +537,7 @@
 				CD3C840822B183DA0041900B /* EndPointType.swift in Sources */,
 				CDC5CC6D22B0B16F00DEE1FD /* Coordinator.swift in Sources */,
 				CD35F19B22B3364C005B6D95 /* Dynamic.swift in Sources */,
+				CDE9785322B3F77A00930C43 /* UIViewController.swift in Sources */,
 				CD3C840C22B183DA0041900B /* DragonsListService.swift in Sources */,
 				CD35F19722B3357D005B6D95 /* DragonsListView.swift in Sources */,
 			);
@@ -511,6 +549,8 @@
 			files = (
 				CD35F18E22B2DED8005B6D95 /* NetworkManagerTests.swift in Sources */,
 				CD3C83BF22B1410E0041900B /* CoordinatorTests.swift in Sources */,
+				CDE9784A22B3D64200930C43 /* DragonsListViewModelTests.swift in Sources */,
+				CDE9785022B3ECD000930C43 /* DragonsListViewControllerTests.swift in Sources */,
 				CD35F18C22B2C88A005B6D95 /* XCTestCase.swift in Sources */,
 				CD35F17E22B2A189005B6D95 /* DragonsListServiceTests.swift in Sources */,
 			);

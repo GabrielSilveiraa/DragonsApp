@@ -163,6 +163,12 @@ enum FakeError: Error {
     case whatever
 }
 
+extension FakeError: LocalizedError {
+    var errorDescription: String? {
+        return "FakeError"
+    }
+}
+
 enum EndPoint: EndPointType {
     case fake
     

@@ -12,11 +12,9 @@ final class Dynamic<T> {
     typealias Listener = (T) -> Void
     
     private(set) var listener: Listener?
-    private(set) var observer: DynamicObserver<T>?
     
     public var value: T {
         didSet {
-            observer?.addValue(value)
             callListener()
         }
     }
@@ -38,10 +36,6 @@ final class Dynamic<T> {
         return listener != nil
     }
     
-    func setObserver(with observer: DynamicObserver<T>) {
-        self.observer = observer
-    }
-    
     private func callListener() {
         //Jumping queues https://www.swiftbysundell.com/posts/reducing-flakiness-in-swift-tests
         if Thread.isMainThread {
@@ -51,13 +45,5 @@ final class Dynamic<T> {
                 self.listener?(self.value)
             }
         }
-    }
-}
-
-final class DynamicObserver<T> {
-    private(set) var values: [T] = []
-    
-    func addValue(_ value: T) {
-        values.append(value)
     }
 }

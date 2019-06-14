@@ -8,22 +8,6 @@
 
 import Foundation
 
-enum NetworkResponse {
-    case success
-    case failure(NetworkError)
-}
-
-enum NetworkError: Error {
-    case noConnection
-    case failed
-    case authenticationError
-    case badRequest
-    case outdated
-    case noData
-    case noResponse
-    case unableToDecode
-}
-
 typealias NetworkCompletion<T> = (_ response: Result<T, Error>) -> Void
 
 protocol NetworkManagerProtocol: AnyObject {
