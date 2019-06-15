@@ -8,22 +8,6 @@
 
 import Foundation
 
-enum NetworkResponse {
-    case success
-    case failure(NetworkError)
-}
-
-enum NetworkError: Error {
-    case noConnection
-    case failed
-    case authenticationError
-    case badRequest
-    case outdated
-    case noData
-    case noResponse
-    case unableToDecode
-}
-
 typealias NetworkCompletion<T> = (_ response: Result<T, Error>) -> Void
 
 protocol NetworkManagerProtocol: AnyObject {
@@ -48,7 +32,7 @@ class NetworkManager {
     private func handleNetworkResponse(_ response: HTTPURLResponse) -> NetworkResponse {
         switch response.statusCode {
         case 200...299: return .success
-        case 401...500: return .failure(NetworkError.authenticationError)
+        case 401...500: return .failure(NetworkError.authentication)
         case 501...599: return .failure(NetworkError.badRequest)
         case 600: return .failure(NetworkError.outdated)
         default: return .failure(NetworkError.failed)
@@ -82,8 +66,10 @@ extension NetworkManager: NetworkManagerProtocol {
                         let jsonResponse = try JSONDecoder().decode(T.self, from: responseData)
                         completion(.success(jsonResponse))
                     } catch {
+                        print(error)
                         completion(.failure(NetworkError.unableToDecode))
                     }
+                    
                 case .failure(let error):
                     completion(.failure(error))
                 }

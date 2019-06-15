@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  DragonsApp
+
+  Created by Gabriel Silveira on 14/06/19.
+  Copyright © 2019 Gabriel Silveira. All rights reserved.
+*/
+
+//Errors
+"noConnectionError" = "Verifique sua conexão";
+"failedError" = "A requisição falhou";
+"authenticationError" = "Falha na autenticação";
+"badRequestError" = "Requisição inválida";
+"outdatedError" = "Requisição desatualizada";
+"noDataError" = "Resposta sem dados";
+"noResponseError" = "Requisição sem resposta";
+"unableToDecodeError" = "Não foi possível decodificar o objeto";

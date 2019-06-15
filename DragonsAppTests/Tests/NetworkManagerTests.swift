@@ -5,6 +5,8 @@
 //  Created by Gabriel Silveira on 13/06/19.
 //  Copyright © 2019 Gabriel Silveira. All rights reserved.
 //
+// swiftlint:disable force_cast
+// swiftlint:disable force_unwrapping
 
 import XCTest
 @testable import DragonsApp
@@ -19,7 +21,8 @@ class NetworkManagerTests: XCTestCase {
             serviceResult = result
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
-            XCTAssertEqual(error as! NetworkError, NetworkError.authenticationError)
+            XCTAssertEqual(error as! NetworkError, NetworkError.authentication)
+            XCTAssertEqual(error.localizedDescription, "Falha na autenticação")
         }
     }
     
@@ -33,6 +36,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.badRequest)
+            XCTAssertEqual(error.localizedDescription, "Requisição inválida")
         }
     }
     
@@ -46,6 +50,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.outdated)
+            XCTAssertEqual(error.localizedDescription, "Requisição desatualizada")
         }
     }
     
@@ -59,6 +64,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.failed)
+            XCTAssertEqual(error.localizedDescription, "A requisição falhou")
         }
     }
     
@@ -71,6 +77,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.noConnection)
+            XCTAssertEqual(error.localizedDescription, "Verifique sua conexão")
         }
     }
     
@@ -84,6 +91,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.noData)
+            XCTAssertEqual(error.localizedDescription, "Resposta sem dados")
         }
     }
     
@@ -98,6 +106,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.unableToDecode)
+            XCTAssertEqual(error.localizedDescription, "Não foi possível decodificar o objeto")
         }
     }
     
@@ -110,6 +119,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.noResponse)
+            XCTAssertEqual(error.localizedDescription, "Requisição sem resposta")
         }
     }
 }
@@ -123,9 +133,11 @@ class URLSessionMock: URLSession {
         self.response = response
         self.error = error
     }
+    
     var data: Data?
     var response: HTTPURLResponse?
     var error: Error?
+    
     override func dataTask(with request: URLRequest, completionHandler: @escaping CompletionHandler) -> URLSessionDataTask {
         let data = self.data
         let response = self.response
@@ -138,6 +150,7 @@ class URLSessionMock: URLSession {
 
 class URLSessionDataTaskMock: URLSessionDataTask {
     private let closure: () -> Void
+    
     init(closure: @escaping () -> Void) {
         self.closure = closure
     }
@@ -159,6 +172,12 @@ enum FakeError: Error {
     case whatever
 }
 
+extension FakeError: LocalizedError {
+    var errorDescription: String? {
+        return "FakeError"
+    }
+}
+
 enum EndPoint: EndPointType {
     case fake
     
@@ -178,7 +197,7 @@ enum EndPoint: EndPointType {
         return .urlEncoding
     }
     
-    var parameters: [String : Any]? {
-        return nil
+    var parameters: [String : Any] {
+        return [:]
     }
 }

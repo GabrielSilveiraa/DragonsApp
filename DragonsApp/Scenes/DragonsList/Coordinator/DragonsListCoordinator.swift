@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol DragonsListNavigationDelegate: AnyObject {
+    func goToDragonDetails()
+}
+
 class DragonsListCoordinator {
     var childCoordinators: [Coordinator] = []
     let navigationController: UINavigationController
@@ -19,5 +23,14 @@ class DragonsListCoordinator {
 
 extension DragonsListCoordinator: Coordinator {
     func start() {
+        let viewModel = DragonsListViewModel(navigationDelegate: self)
+        let viewController = DragonsListViewController(viewModel: viewModel)
+        navigationController.viewControllers = [viewController]
+    }
+}
+
+extension DragonsListCoordinator: DragonsListNavigationDelegate {
+    func goToDragonDetails() {
+        
     }
 }
