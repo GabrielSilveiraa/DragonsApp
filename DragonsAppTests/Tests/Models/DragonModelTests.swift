@@ -34,6 +34,41 @@ class DragonModelTests: XCTestCase {
         XCTAssertEqual(dragon.age, 3434)
         XCTAssertEqual(dragon.greetingType, .gr)
         XCTAssertEqual(dragon.description, "A beautiful japanese dragon.")
-        
+    }
+    
+    func testDragonGreetingGroar() {
+        dragon = Dragon(id: 1,
+                        age: 1,
+                        description: "test", title: nil,
+                        image: nil,
+                        greetingType: .groar)
+        XCTAssertEqual(dragon.greetingType.greeting, "Groarrrrrrr!")
+    }
+    
+    func testDragonGreetingRoar() {
+        dragon = Dragon(id: 1,
+                        age: 1,
+                        description: "test", title: nil,
+                        image: nil,
+                        greetingType: .roar)
+        XCTAssertEqual(dragon.greetingType.greeting, "Roarrrrrrrr!")
+    }
+    
+    func testDragonGreetingGr() {
+        dragon = Dragon(id: 1,
+                        age: 1,
+                        description: "test", title: nil,
+                        image: nil,
+                        greetingType: .gr)
+        XCTAssertEqual(dragon.greetingType.greeting, "Grrrrrrrrrrr!")
+    }
+    
+    func testDragonGreetingWhoa() {
+        dragon = Dragon(id: 1,
+                        age: 1,
+                        description: "test", title: nil,
+                        image: nil,
+                        greetingType: .whoa)
+        XCTAssertEqual(dragon.greetingType.greeting, "Whoaaaaaaa")
     }
 }
