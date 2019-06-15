@@ -66,6 +66,7 @@ extension NetworkManager: NetworkManagerProtocol {
                         let jsonResponse = try JSONDecoder().decode(T.self, from: responseData)
                         completion(.success(jsonResponse))
                     } catch {
+                        print(error)
                         completion(.failure(NetworkError.unableToDecode))
                     }
                     

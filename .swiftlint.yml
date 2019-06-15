@@ -45,11 +45,6 @@ identifier_name:
   min_length:
     error: 3
   excluded:
-    - rg
+    - gr
     - id
-    - to
-    - at
-    - ID
-    - URL
-    - GlobalAPIKey
 reporter: "xcode"

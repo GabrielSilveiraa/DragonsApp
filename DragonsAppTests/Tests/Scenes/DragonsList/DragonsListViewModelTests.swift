@@ -6,6 +6,7 @@
 //  Copyright © 2019 Gabriel Silveira. All rights reserved.
 //
 // swiftlint:disable force_unwrapping
+
 import XCTest
 @testable import DragonsApp
 

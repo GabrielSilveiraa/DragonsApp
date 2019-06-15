@@ -6,6 +6,8 @@
 //  Copyright © 2019 Gabriel Silveira. All rights reserved.
 //
 // swiftlint:disable force_cast
+// swiftlint:disable force_unwrapping
+
 import XCTest
 @testable import DragonsApp
 
@@ -35,10 +37,11 @@ class DragonsListViewControllerTests: XCTestCase {
     func testTableViewRow() {
         let tableView = dragonsListViewController.baseView.tableView
         XCTAssertEqual(dragonsListViewController.tableView(tableView, numberOfRowsInSection: 0), 0)
-        fakeDragonsListViewModel.dragonCells.value = [DragonsListCellViewModel(model: Dragon(title: "Dragon Test"))]
+        let dragon: Dragon = loadJson(filename: "Dragon")!
+        fakeDragonsListViewModel.dragonCells.value = [DragonsListCellViewModel(model: dragon)]
         XCTAssertEqual(dragonsListViewController.tableView(tableView, numberOfRowsInSection: 0), 1)
         let cell = dragonsListViewController.tableView(tableView, cellForRowAt: IndexPath(row: 0, section: 0))
-        XCTAssertEqual(cell.textLabel?.text, "Dragon Test")
+        XCTAssertEqual(cell.textLabel?.text, "The japanese dragon")
     }
     
     func testShowError() {

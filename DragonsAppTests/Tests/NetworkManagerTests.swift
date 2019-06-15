@@ -7,6 +7,7 @@
 //
 // swiftlint:disable force_cast
 // swiftlint:disable force_unwrapping
+
 import XCTest
 @testable import DragonsApp
 
