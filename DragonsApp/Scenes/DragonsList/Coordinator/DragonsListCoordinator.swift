@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DragonsListNavigationDelegate: AnyObject {
-    func goToDragonDetails()
+    func goToDragonDetails(dragon: Dragon)
 }
 
 class DragonsListCoordinator {
@@ -30,7 +30,9 @@ extension DragonsListCoordinator: Coordinator {
 }
 
 extension DragonsListCoordinator: DragonsListNavigationDelegate {
-    func goToDragonDetails() {
-        
+    func goToDragonDetails(dragon: Dragon) {
+        let viewModel = DragonDetailsViewModel(dragon: dragon)
+        let viewController = DragonDetailsViewController(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

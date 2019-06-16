@@ -32,8 +32,15 @@
 		CD3C840B22B183DA0041900B /* Environment.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD3C840222B183DA0041900B /* Environment.plist */; };
 		CD3C840C22B183DA0041900B /* DragonsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C840422B183DA0041900B /* DragonsListService.swift */; };
 		CD522C4C22B5865800F0D284 /* Dragon.json in Resources */ = {isa = PBXBuildFile; fileRef = CD522C4B22B5865800F0D284 /* Dragon.json */; };
-		CD522C4E22B586F200F0D284 /* DragonModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C4D22B586F200F0D284 /* DragonModelTests.swift */; };
 		CD522C5122B587B200F0D284 /* IncompleteDragon.json in Resources */ = {isa = PBXBuildFile; fileRef = CD522C5022B587B200F0D284 /* IncompleteDragon.json */; };
+		CD522C5522B58FFD00F0D284 /* DragonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C5222B58FFD00F0D284 /* DragonDetailsViewController.swift */; };
+		CD522C5622B58FFD00F0D284 /* DragonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C5322B58FFD00F0D284 /* DragonDetailsView.swift */; };
+		CD522C5722B58FFD00F0D284 /* DragonDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C5422B58FFD00F0D284 /* DragonDetailsViewModel.swift */; };
+		CD522C5922B5972900F0D284 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD522C5822B5972900F0D284 /* Kingfisher.framework */; };
+		CD522C5E22B5AC8C00F0D284 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C5D22B5AC8C00F0D284 /* UILabel.swift */; };
+		CD522C6422B5E59100F0D284 /* DragonModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C6322B5E59100F0D284 /* DragonModelTests.swift */; };
+		CD522C6722B5E5C400F0D284 /* DragonDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C6622B5E5C400F0D284 /* DragonDetailsViewModelTests.swift */; };
+		CD522C6922B5EB4E00F0D284 /* DragonDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C6822B5EB4E00F0D284 /* DragonDetailsViewControllerTests.swift */; };
 		CD783F0E22B081F700F15F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD783F0D22B081F700F15F5D /* AppDelegate.swift */; };
 		CD783F1522B081F800F15F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD783F1422B081F800F15F5D /* Assets.xcassets */; };
 		CD783F1822B081F800F15F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */; };
@@ -84,8 +91,15 @@
 		CD3C840222B183DA0041900B /* Environment.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Environment.plist; sourceTree = "<group>"; };
 		CD3C840422B183DA0041900B /* DragonsListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonsListService.swift; sourceTree = "<group>"; };
 		CD522C4B22B5865800F0D284 /* Dragon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Dragon.json; sourceTree = "<group>"; };
-		CD522C4D22B586F200F0D284 /* DragonModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonModelTests.swift; sourceTree = "<group>"; };
 		CD522C5022B587B200F0D284 /* IncompleteDragon.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IncompleteDragon.json; sourceTree = "<group>"; };
+		CD522C5222B58FFD00F0D284 /* DragonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonDetailsViewController.swift; sourceTree = "<group>"; };
+		CD522C5322B58FFD00F0D284 /* DragonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonDetailsView.swift; sourceTree = "<group>"; };
+		CD522C5422B58FFD00F0D284 /* DragonDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonDetailsViewModel.swift; sourceTree = "<group>"; };
+		CD522C5822B5972900F0D284 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
+		CD522C5D22B5AC8C00F0D284 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		CD522C6322B5E59100F0D284 /* DragonModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonModelTests.swift; sourceTree = "<group>"; };
+		CD522C6622B5E5C400F0D284 /* DragonDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		CD522C6822B5EB4E00F0D284 /* DragonDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonDetailsViewControllerTests.swift; sourceTree = "<group>"; };
 		CD783F0A22B081F700F15F5D /* DragonsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD783F0D22B081F700F15F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD783F1422B081F800F15F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD522C5922B5972900F0D284 /* Kingfisher.framework in Frameworks */,
 				CD35F1A922B349BB005B6D95 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE9784D22B3ECA200930C43 /* Scenes */,
-				CD522C4F22B5871E00F0D284 /* Models */,
+				CD522C6222B5E59100F0D284 /* Model */,
 				CD3C83BE22B1410E0041900B /* CoordinatorTests.swift */,
 				CD35F18D22B2DED8005B6D95 /* NetworkManagerTests.swift */,
 			);
@@ -215,6 +230,7 @@
 		CD35F1A722B3499B005B6D95 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				CD522C5822B5972900F0D284 /* Kingfisher.framework */,
 				CD35F1A822B349BB005B6D95 /* SnapKit.framework */,
 			);
 			path = Framework;
@@ -276,12 +292,45 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		CD522C4F22B5871E00F0D284 /* Models */ = {
+		CD522C5A22B59B8E00F0D284 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				CD522C4D22B586F200F0D284 /* DragonModelTests.swift */,
+				CD522C5222B58FFD00F0D284 /* DragonDetailsViewController.swift */,
 			);
-			path = Models;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CD522C5B22B59B9600F0D284 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD522C5422B58FFD00F0D284 /* DragonDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD522C5C22B59B9E00F0D284 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD522C5322B58FFD00F0D284 /* DragonDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD522C6222B5E59100F0D284 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD522C6322B5E59100F0D284 /* DragonModelTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD522C6522B5E5AC00F0D284 /* DragonDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CD522C6622B5E5C400F0D284 /* DragonDetailsViewModelTests.swift */,
+				CD522C6822B5EB4E00F0D284 /* DragonDetailsViewControllerTests.swift */,
+			);
+			path = DragonDetails;
 			sourceTree = "<group>";
 		};
 		CD783F0122B081F600F15F5D = {
@@ -364,6 +413,9 @@
 		CDC5CC7222B0B53F00DEE1FD /* DragonDetails */ = {
 			isa = PBXGroup;
 			children = (
+				CD522C5C22B59B9E00F0D284 /* View */,
+				CD522C5B22B59B9600F0D284 /* ViewModel */,
+				CD522C5A22B59B8E00F0D284 /* ViewController */,
 			);
 			path = DragonDetails;
 			sourceTree = "<group>";
@@ -372,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE9784E22B3ECAA00930C43 /* DragonsList */,
+				CD522C6522B5E5AC00F0D284 /* DragonDetails */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -391,6 +444,7 @@
 			children = (
 				CDE9785222B3F77A00930C43 /* UIViewController.swift */,
 				CDE9785722B4215F00930C43 /* String.swift */,
+				CD522C5D22B5AC8C00F0D284 /* UILabel.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -536,6 +590,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			name = "Carthage Script";
 			outputFileListPaths = (
@@ -559,6 +614,7 @@
 				CD3C840A22B183DA0041900B /* Environment.swift in Sources */,
 				CD35F19822B3357D005B6D95 /* DragonsListViewModel.swift in Sources */,
 				CD35F19D22B336CA005B6D95 /* BaseView.swift in Sources */,
+				CD522C5622B58FFD00F0D284 /* DragonDetailsView.swift in Sources */,
 				CD35F1A622B343DE005B6D95 /* DragonsListTableViewCell.swift in Sources */,
 				CD3C840922B183DA0041900B /* DragonEndPoint.swift in Sources */,
 				CDC5CC6F22B0B21800DEE1FD /* AppCoordinator.swift in Sources */,
@@ -566,15 +622,18 @@
 				CD3C840622B183DA0041900B /* ParameterEncoding.swift in Sources */,
 				CD3C840522B183DA0041900B /* NetworkManager.swift in Sources */,
 				CDE9785822B4215F00930C43 /* String.swift in Sources */,
+				CD522C5E22B5AC8C00F0D284 /* UILabel.swift in Sources */,
 				CD3C840722B183DA0041900B /* HTTPMethod.swift in Sources */,
 				CDC5CC7422B0B5CD00DEE1FD /* DragonsListCoordinator.swift in Sources */,
 				CD783F0E22B081F700F15F5D /* AppDelegate.swift in Sources */,
 				CD3C840822B183DA0041900B /* EndPointType.swift in Sources */,
 				CDC5CC6D22B0B16F00DEE1FD /* Coordinator.swift in Sources */,
+				CD522C5722B58FFD00F0D284 /* DragonDetailsViewModel.swift in Sources */,
 				CD35F19B22B3364C005B6D95 /* Dynamic.swift in Sources */,
 				CDE9785322B3F77A00930C43 /* UIViewController.swift in Sources */,
 				CD3C840C22B183DA0041900B /* DragonsListService.swift in Sources */,
 				CD35F19722B3357D005B6D95 /* DragonsListView.swift in Sources */,
+				CD522C5522B58FFD00F0D284 /* DragonDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,8 +643,10 @@
 			files = (
 				CD35F18E22B2DED8005B6D95 /* NetworkManagerTests.swift in Sources */,
 				CD3C83BF22B1410E0041900B /* CoordinatorTests.swift in Sources */,
-				CD522C4E22B586F200F0D284 /* DragonModelTests.swift in Sources */,
+				CD522C6422B5E59100F0D284 /* DragonModelTests.swift in Sources */,
 				CDE9784A22B3D64200930C43 /* DragonsListViewModelTests.swift in Sources */,
+				CD522C6722B5E5C400F0D284 /* DragonDetailsViewModelTests.swift in Sources */,
+				CD522C6922B5EB4E00F0D284 /* DragonDetailsViewControllerTests.swift in Sources */,
 				CDE9785022B3ECD000930C43 /* DragonsListViewControllerTests.swift in Sources */,
 				CD35F18C22B2C88A005B6D95 /* XCTestCase.swift in Sources */,
 				CD35F17E22B2A189005B6D95 /* DragonsListServiceTests.swift in Sources */,

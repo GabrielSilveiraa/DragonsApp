@@ -22,7 +22,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.authentication)
-            XCTAssertEqual(error.localizedDescription, "Falha na autenticação")
+            XCTAssertEqual(error.localizedDescription, "Authentication failure")
         }
     }
     
@@ -36,7 +36,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.badRequest)
-            XCTAssertEqual(error.localizedDescription, "Requisição inválida")
+            XCTAssertEqual(error.localizedDescription, "Bad request")
         }
     }
     
@@ -50,7 +50,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.outdated)
-            XCTAssertEqual(error.localizedDescription, "Requisição desatualizada")
+            XCTAssertEqual(error.localizedDescription, "Outdated request")
         }
     }
     
@@ -64,7 +64,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.failed)
-            XCTAssertEqual(error.localizedDescription, "A requisição falhou")
+            XCTAssertEqual(error.localizedDescription, "Request failed")
         }
     }
     
@@ -77,7 +77,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.noConnection)
-            XCTAssertEqual(error.localizedDescription, "Verifique sua conexão")
+            XCTAssertEqual(error.localizedDescription, "Check your connection")
         }
     }
     
@@ -91,7 +91,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.noData)
-            XCTAssertEqual(error.localizedDescription, "Resposta sem dados")
+            XCTAssertEqual(error.localizedDescription, "No data")
         }
     }
     
@@ -106,7 +106,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.unableToDecode)
-            XCTAssertEqual(error.localizedDescription, "Não foi possível decodificar o objeto")
+            XCTAssertEqual(error.localizedDescription, "Unable to decode data")
         }
     }
     
@@ -119,7 +119,7 @@ class NetworkManagerTests: XCTestCase {
         }
         XCTAssertThrowsError(try serviceResult.get()) { error in
             XCTAssertEqual(error as! NetworkError, NetworkError.noResponse)
-            XCTAssertEqual(error.localizedDescription, "Requisição sem resposta")
+            XCTAssertEqual(error.localizedDescription, "No response")
         }
     }
 }

@@ -30,7 +30,9 @@ final class DragonsListViewController: UIViewController {
     // MARK: - Life Cycle
     override func loadView() {
         super.loadView()
+        
         view = baseView
+        title = viewModel.navigationTitle
     }
     
     override func viewDidLoad() {
@@ -59,7 +61,10 @@ final class DragonsListViewController: UIViewController {
 }
 
 extension DragonsListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        viewModel.didSelect(row: indexPath.row)
+    }
 }
 
 extension DragonsListViewController: UITableViewDataSource {

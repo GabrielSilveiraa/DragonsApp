@@ -13,6 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     private var appCoordinator: Coordinator?
     
+    class var isIphoneXOrBigger: Bool {
+        // 812.0 on iPhone X, XS.
+        // 896.0 on iPhone XS Max, XR.
+        return UIScreen.main.bounds.height >= 812
+    }
+    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         

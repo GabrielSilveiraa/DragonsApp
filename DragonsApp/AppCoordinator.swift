@@ -11,7 +11,11 @@ import UIKit
 class AppCoordinator {
     private let window: UIWindow
     var childCoordinators: [Coordinator] = []
-    let navigationController = UINavigationController()
+    let navigationController: UINavigationController = {
+        let navigation = UINavigationController()
+        navigation.navigationBar.prefersLargeTitles = true
+        return navigation
+    }()
     
     init(window: UIWindow) {
         self.window = window

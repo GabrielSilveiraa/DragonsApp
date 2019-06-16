@@ -12,14 +12,18 @@ protocol DragonsListViewModelProtocol: AnyObject {
     var dragonCells: Dynamic<[DragonsListCellViewModelProtocol]> { get }
     var loading: Dynamic<Bool> { get }
     var error: Dynamic<String?> { get }
+    var navigationTitle: String { get }
+    
+    func didSelect(row: Int)
 }
 
-final class DragonsListViewModel {
+class DragonsListViewModel {
     private let service: DragonsListServiceProtocol
     private weak var navigationDelegate: DragonsListNavigationDelegate?
     var dragonCells: Dynamic<[DragonsListCellViewModelProtocol]> = Dynamic([])
     var loading: Dynamic<Bool> = Dynamic(false)
     var error: Dynamic<String?> = Dynamic(nil)
+    private var dragons: [Dragon] = []
     
     init(service: DragonsListServiceProtocol = DragonsListService(),
          navigationDelegate: DragonsListNavigationDelegate? = nil) {
@@ -34,6 +38,7 @@ final class DragonsListViewModel {
             self.loading.value = false
             switch result {
             case .success(let dragons):
+                self.dragons = dragons
                 self.dragonCells.value = dragons.map { DragonsListCellViewModel(model: $0) }
                 
             case .failure(let error):
@@ -43,4 +48,13 @@ final class DragonsListViewModel {
     }
 }
 
-extension DragonsListViewModel: DragonsListViewModelProtocol {}
+extension DragonsListViewModel: DragonsListViewModelProtocol {
+    var navigationTitle: String {
+        return "dragonsListTitle".localized
+    }
+    
+    func didSelect(row: Int) {
+        let dragon = dragons[row]
+        navigationDelegate?.goToDragonDetails(dragon: dragon)
+    }
+}

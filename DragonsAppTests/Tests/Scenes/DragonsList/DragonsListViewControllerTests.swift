@@ -59,10 +59,26 @@ class DragonsListViewControllerTests: XCTestCase {
         fakeDragonsListViewModel.loading.value = true
         XCTAssertFalse(dragonsListViewController.baseView.activityIndicator.isHidden)
     }
+    
+    func testSelectRow() {
+        let tableView = dragonsListViewController.baseView.tableView
+        dragonsListViewController.tableView(tableView, didSelectRowAt: IndexPath(row: 1, section: 0))
+        XCTAssertEqual(fakeDragonsListViewModel.selectedRow, 1)
+    }
+    
+    func testNavigationTitle() {
+        XCTAssertEqual(dragonsListViewController.title, "Navigation Test")
+    }
 }
 
 class FakeDragonsListViewModel: DragonsListViewModelProtocol {
+    var navigationTitle = "Navigation Test"
     var dragonCells: Dynamic<[DragonsListCellViewModelProtocol]> = Dynamic([])
     var loading: Dynamic<Bool> = Dynamic(false)
     var error: Dynamic<String?> = Dynamic(nil)
+    var selectedRow: Int?
+    
+    func didSelect(row: Int) {
+        selectedRow = row
+    }
 }
