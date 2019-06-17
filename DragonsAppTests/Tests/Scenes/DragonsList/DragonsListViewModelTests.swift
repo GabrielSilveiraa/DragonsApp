@@ -12,6 +12,7 @@ import XCTest
 
 class DragonsListViewModelTests: XCTestCase {
     var dragonsListService: MockDragonsListService!
+    var fakeDragonsListCoordinator: FakeDragonsListCoordinator!
     
     override func setUp() {
         super.setUp()
@@ -37,6 +38,16 @@ class DragonsListViewModelTests: XCTestCase {
         XCTAssertTrue(dragonsListService.getDragonsCalled)
         XCTAssertEqual(dragonsListViewModel.error.value, "FakeError")
     }
+    
+    func testDidSelectDragon() {
+        let mockedDragons: [Dragon] = loadJson(filename: "DragonsList")!
+        fakeDragonsListCoordinator = FakeDragonsListCoordinator()
+        let dragonsListViewModel = DragonsListViewModel(service: dragonsListService,
+                                                        navigationDelegate: fakeDragonsListCoordinator)
+        dragonsListViewModel.didSelect(row: 0)
+        XCTAssertTrue(fakeDragonsListCoordinator.dragonDetailsCalled)
+        XCTAssertEqual(fakeDragonsListCoordinator.selectedDragon, mockedDragons[0])
+    }
 }
 
 class MockDragonsListService: DragonsListServiceProtocol {
@@ -55,5 +66,15 @@ class MockDragonsListService: DragonsListServiceProtocol {
         } else {
             completion(.failure(FakeError.whatever))
         }
+    }
+}
+
+class FakeDragonsListCoordinator: DragonsListNavigationDelegate {
+    var dragonDetailsCalled = false
+    var selectedDragon: Dragon?
+    
+    func goToDragonDetails(dragon: Dragon) {
+        dragonDetailsCalled = true
+        selectedDragon = dragon
     }
 }

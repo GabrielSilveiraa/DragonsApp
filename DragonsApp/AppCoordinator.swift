@@ -11,7 +11,15 @@ import UIKit
 class AppCoordinator {
     private let window: UIWindow
     var childCoordinators: [Coordinator] = []
-    let navigationController = UINavigationController()
+    let navigationController: UINavigationController = {
+        let navigation = UINavigationController()
+        navigation.navigationBar.barStyle = .black
+        navigation.navigationBar.tintColor = .white
+        navigation.navigationBar.barTintColor = .red
+        navigation.navigationBar.prefersLargeTitles = true
+        navigation.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        return navigation
+    }()
     
     init(window: UIWindow) {
         self.window = window

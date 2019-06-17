@@ -36,7 +36,8 @@ enum GreetingType: String, Decodable {
 struct Dragon {
     let id, age: Int
     let description: String
-    let title, image: String?
+    let title: String?
+    let image: URL?
     let greetingType: GreetingType
 }
 
@@ -52,7 +53,7 @@ extension Dragon: Decodable {
         self.age = try container.decode(Int.self, forKey: .age)
         self.description = try container.decode(String.self, forKey: .description)
         self.title = try container.decodeIfPresent(String.self, forKey: .title)
-        self.image = try container.decodeIfPresent(String.self, forKey: .image)
+        self.image = try container.decodeIfPresent(URL.self, forKey: .image)
         self.greetingType = try container.decodeIfPresent(GreetingType.self, forKey: .greetingType) ?? .gr
     }
 }
