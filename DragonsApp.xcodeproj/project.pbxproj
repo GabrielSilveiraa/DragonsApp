@@ -41,6 +41,7 @@
 		CD522C6422B5E59100F0D284 /* DragonModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C6322B5E59100F0D284 /* DragonModelTests.swift */; };
 		CD522C6722B5E5C400F0D284 /* DragonDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C6622B5E5C400F0D284 /* DragonDetailsViewModelTests.swift */; };
 		CD522C6922B5EB4E00F0D284 /* DragonDetailsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C6822B5EB4E00F0D284 /* DragonDetailsViewControllerTests.swift */; };
+		CD522C6D22B71C0900F0D284 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD522C6C22B71C0900F0D284 /* UIColor.swift */; };
 		CD783F0E22B081F700F15F5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD783F0D22B081F700F15F5D /* AppDelegate.swift */; };
 		CD783F1522B081F800F15F5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD783F1422B081F800F15F5D /* Assets.xcassets */; };
 		CD783F1822B081F800F15F5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD783F1622B081F800F15F5D /* LaunchScreen.storyboard */; };
@@ -100,6 +101,7 @@
 		CD522C6322B5E59100F0D284 /* DragonModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragonModelTests.swift; sourceTree = "<group>"; };
 		CD522C6622B5E5C400F0D284 /* DragonDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		CD522C6822B5EB4E00F0D284 /* DragonDetailsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonDetailsViewControllerTests.swift; sourceTree = "<group>"; };
+		CD522C6C22B71C0900F0D284 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CD783F0A22B081F700F15F5D /* DragonsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD783F0D22B081F700F15F5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD783F1422B081F800F15F5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -445,6 +447,7 @@
 				CDE9785222B3F77A00930C43 /* UIViewController.swift */,
 				CDE9785722B4215F00930C43 /* String.swift */,
 				CD522C5D22B5AC8C00F0D284 /* UILabel.swift */,
+				CD522C6C22B71C0900F0D284 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -630,6 +633,7 @@
 				CDC5CC6D22B0B16F00DEE1FD /* Coordinator.swift in Sources */,
 				CD522C5722B58FFD00F0D284 /* DragonDetailsViewModel.swift in Sources */,
 				CD35F19B22B3364C005B6D95 /* Dynamic.swift in Sources */,
+				CD522C6D22B71C0900F0D284 /* UIColor.swift in Sources */,
 				CDE9785322B3F77A00930C43 /* UIViewController.swift in Sources */,
 				CD3C840C22B183DA0041900B /* DragonsListService.swift in Sources */,
 				CD35F19722B3357D005B6D95 /* DragonsListView.swift in Sources */,
