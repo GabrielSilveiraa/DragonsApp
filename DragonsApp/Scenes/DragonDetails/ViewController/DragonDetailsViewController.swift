@@ -12,7 +12,7 @@ final class DragonDetailsViewController: UIViewController {
     private(set) lazy var baseView: DragonDetailsView = {
         let view = DragonDetailsView()
         view.dragonImageView.kf.setImage(with: viewModel.dragonImageUrl,
-                                         placeholder: UILabel(text: viewModel.imagePlaceholderTitle))
+                                         placeholder: UILabel(textColor: .white, text: viewModel.imagePlaceholderTitle))
         view.descriptionLabel.text = viewModel.dragonDescription
         view.ageLabel.text = viewModel.dragonAge
         view.greetingButton.addTarget(self, action: #selector(didPressGreetingButton), for: .touchUpInside)

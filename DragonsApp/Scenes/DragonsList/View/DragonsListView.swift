@@ -14,11 +14,12 @@ final class DragonsListView: BaseView {
         let tableView = UITableView()
         tableView.register(DragonsListTableViewCell.self,
                            forCellReuseIdentifier: DragonsListTableViewCell.identifier)
+        tableView.backgroundColor = .blackWithAlpha
         return tableView
     }()
     
     let activityIndicator: UIActivityIndicatorView = {
-        let activityIndicator = UIActivityIndicatorView(style: .gray)
+        let activityIndicator = UIActivityIndicatorView(style: .white)
         return activityIndicator
     }()
     

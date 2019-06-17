@@ -13,6 +13,10 @@ final class DragonsListTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        backgroundColor = .blackWithAlpha
+        textLabel?.textColor = .white
+        textLabel?.font = UIFont.boldSystemFont(ofSize: 15)
     }
     
     required init?(coder aDecoder: NSCoder) {

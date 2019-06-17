@@ -17,28 +17,31 @@ final class DragonDetailsView: BaseView {
     }()
     
     let descriptionLabel: UILabel = {
-        let label = UILabel()
+        let label = UILabel(textColor: .white)
         label.numberOfLines = 0
         return label
     }()
     
     let ageLabel: UILabel = {
-        let label = UILabel()
+        let label = UILabel(size: 15, textColor: .white)
         return label
     }()
     
     let greetingButton: UIButton = {
         let button = UIButton(type: .system)
+        button.layer.cornerRadius = 4
+        button.backgroundColor = .red
+        button.setTitleColor(.white, for: .normal)
         button.setTitle("greet".localized, for: .normal)
         return button
     }()
     
     override func initialize() {
-        backgroundColor = .white
-        addSubview(dragonImageView)
-        addSubview(descriptionLabel)
+        backgroundColor = .blackWithAlpha
         addSubview(ageLabel)
         addSubview(greetingButton)
+        addSubview(dragonImageView)
+        addSubview(descriptionLabel)
     }
     
     override func setupConstraints() {
