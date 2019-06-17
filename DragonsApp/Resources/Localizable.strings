@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  DragonsApp
+
+  Created by Gabriel Silveira on 14/06/19.
+  Copyright © 2019 Gabriel Silveira. All rights reserved.
+*/
+
+//Errors
+"noConnectionError" = "Check your connection";
+"failedError" = "Request failed";
+"authenticationError" = "Authentication failure";
+"badRequestError" = "Bad request";
+"outdatedError" = "Outdated request";
+"noDataError" = "No data";
+"noResponseError" = "No response";
+"unableToDecodeError" = "Unable to decode data";
+
+//DragonsList
+"dragonsListTitle" = "Dragons";
+
+//DragonDetails
+"noDragonImage"= "Unavailable image";
+"age" = "Age";
+"greet" = "Greet!";
