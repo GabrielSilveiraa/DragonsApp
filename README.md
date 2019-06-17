@@ -12,7 +12,7 @@ If you already have carthage intalled, you can jump to next step.
 
 If you don't, run on terminal to install Homebrew:
 ```
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" < /dev/null 2> /dev/null
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 Ant then, run on terminal to install carthage:
