@@ -55,8 +55,12 @@ extension DragonsListViewModel: DragonsListViewModelProtocol {
     
     func didSelect(row: Int) {
         let dragon = dragons[row]
-        DispatchQueue.main.async {
-            self.navigationDelegate?.goToDragonDetails(dragon: dragon)
+        if Thread.isMainThread {
+            navigationDelegate?.goToDragonDetails(dragon: dragon)
+        } else {
+            DispatchQueue.main.async {
+                self.navigationDelegate?.goToDragonDetails(dragon: dragon)
+            }
         }
     }
 }
